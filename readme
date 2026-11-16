@@ -1,30 +1,16 @@
 # Support Vector Machines (SVM): Generalization, Kernel Methods, and Noise Robustness
 
-**Course:** Machine Learning and Neural Networks for Neuroscience (`27504-01`) — Bar-Ilan University[cite: 5]  
-**Lecturer:** Dr. Zvi Roth[cite: 5]  
+**Course:** Machine Learning and Neural Networks for Neuroscience (`27504-01`) — Bar-Ilan University  
 **Assignment:** Homework 2 — Support Vector Machines (SVM)
 
 ---
 
 ## Overview
 
-This repository contains the Python implementation, visualization scripts, and empirical analysis for **Homework 2**, which investigates how linear and kernel-based Support Vector Machines behave under varying geometric structures, Gaussian data augmentations, training label corruption, and high-dimensional feature spaces.
+This repository contains the Python implementation, visualization scripts, and empirical analysis for 
+**Homework 2**, which investigates how linear and kernel-based Support Vector Machines behave under varying
+geometric structures, Gaussian data augmentations, training label corruption, and high-dimensional feature spaces.
 
 All experiments use a fixed random seed (`seed=42`) to ensure full reproducibility across runs.
 
 ---
-
-## Repository Structure
-
-```text
-├── data_generation.py          # Task 1: Synthetic dataset generators (Linear & Concentric Circular)
-├── linear_vs_perceptron.py     # Task 2: Perceptron vs. Soft-Margin Linear SVM comparison
-├── kernel_svm.py               # Task 3: Linear, RBF, and Polynomial (d=2, 3) Kernel SVMs
-├── data_augmentation.py        # Task 4: Generalization analysis across k=2,000 Gaussian noise batches
-├── label_noise.py              # Task 5: Training label shuffling (15%–100%) and soft-margin resilience
-├── high_dimensionality.py      # Task 6: Scaling datasets and label-noise tests to d = 2, 5, 10, 15
-├── bonus_threshold.py          # Bonus: Sweeping Gaussian noise SD to locate the 70% accuracy threshold
-├── report/
-│   └── HW2_SVM_Report.pdf      # Complete written report with plots, tables, and conclusions
-├── requirements.txt            # Python dependencies
-└── README.md
